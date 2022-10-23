@@ -1,0 +1,11 @@
+mat-card {
+    position: absolute;
+    top: 20%;
+    left: 22.5%;
+    width: 50%
+}
+
+
+p {
+    word-wrap: break-word;
+}
