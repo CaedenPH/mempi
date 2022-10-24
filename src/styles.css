@@ -2,7 +2,8 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 * {
-  --dark-green: rgb(5, 86, 5);
+  --light-green: #49CC13;
+  font-family: "Anonymous pro";
 }
 
 html {

@@ -1,23 +1,23 @@
-<p style="filter: blur(3px); color: lime;">
+<p style="filter: blur(2px);" class="green">
     {{ background }}
 </p>
-<mat-card style="background-color: rgb(16, 14, 14);">
-    <mat-card-title style="color:var(--dark-green)">π memorization tool</mat-card-title>
+<mat-card class="transparent">
+    <mat-card-title class="green">π memorization tool</mat-card-title>
     <mat-card-content>
+        <mat-label class="green">Length of pi: {{input.value.length}}</mat-label>
         <textarea 
             matInput
             type="number"
             (input)="onInput()"
             #input
-            [style.color] = "isValid ? 'black' : 'red'"
+            [style.color] = "isValid ? 'var(--light-green)' : 'red'"
             placeholder="Start typing pi..."
         ></textarea>
-        <mat-label style="color:var(--dark-green)">Length of pi: {{input.value.length}}</mat-label>
     </mat-card-content> 
     <mat-accordion>
-        <mat-expansion-panel (opened)="calculateNextNumbers()" #nextNumbersPanel style="background-color: var(--dark-green);">
+        <mat-expansion-panel (opened)="calculateNextNumbers()" #nextNumbersPanel class="transparent green">
             <mat-expansion-panel-header>
-                <mat-panel-title style="color: black;">
+                <mat-panel-title class="green">
                     Reveal next 6 numbers
                 </mat-panel-title>
             </mat-expansion-panel-header>

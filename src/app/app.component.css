@@ -13,11 +13,21 @@ textarea {
     width: 99%;
     height: 200px;
     resize: none;
-    background-color: var(--dark-green);
+    background-color: rgba(0,0,0,.5);
     border: 3px solid transparent;
     border-radius: 4px;
+    caret-color: var(--light-green);
+    margin-top: 10px;
 }
 
-textarea:focus { 
+textarea:focus {
     outline: none !important;
+}
+
+.transparent {
+    background-color: rgba(0,0,0,.5);
+}
+
+.green {
+    color: var(--light-green);
 }
