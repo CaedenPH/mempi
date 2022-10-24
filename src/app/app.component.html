@@ -1,6 +1,7 @@
 <p>
     {{ background }}
-</p><mat-card class="simple-form-style">
+</p>
+<mat-card>
     <mat-card-title>π memorization tool</mat-card-title>
     <mat-card-content>
         <textarea 
@@ -8,7 +9,7 @@
             type="number"
             (input)="onInput()"
             #input
-            style="width: 100%; height: 200px; resize: none;"
+            style="width: 99%; height: 200px; resize: none;"
             [style.color] = "isValid ? 'black' : 'red'"
             placeholder="Start typing pi..."
         ></textarea>

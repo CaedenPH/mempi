@@ -1,13 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+* {
+  overflow-y: hidden;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
 
