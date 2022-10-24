@@ -8,3 +8,16 @@ mat-card {
 p {
     word-wrap: break-word;
 }
+
+textarea {
+    width: 99%;
+    height: 200px;
+    resize: none;
+    background-color: var(--dark-green);
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+textarea:focus { 
+    outline: none !important;
+}
