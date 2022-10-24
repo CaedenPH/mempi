@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'mempi';
   nextNumbers: string = ""; 
   isValid: boolean = true;
-  background: string = pi.replace(/(\r\n|\n|\r)/gm, "").split("").reverse().join("");
+  background: string = pi.split("").reverse().join("");
 
   @ViewChild('input') input: ElementRef | undefined;
   @ViewChild('nextNumbersPanel') nextNumbersPanel: MatExpansionPanel | undefined;
