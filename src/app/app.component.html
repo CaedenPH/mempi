@@ -5,15 +5,25 @@
     <mat-card-title class="green">π memorization tool</mat-card-title>
     <mat-card-content>
         <mat-label class="green">Length of pi: {{input.value.length}}</mat-label>
-        <textarea 
-            matInput
-            type="number"
-            (input)="onInput()"
-            #input
-            [style.color] = "isValid ? 'var(--light-green)' : 'red'"
-            placeholder="Start typing pi..."
-        ></textarea>
-    </mat-card-content> 
+        <div class="input">
+            <textarea 
+                matInput
+                type="number"
+                (input)="onInput()"
+                #input
+                [style.color] = "isValid ? 'var(--light-green)' : 'red'"
+                placeholder="Start typing pi..."></textarea>
+        </div>
+        <div class="timer" style="margin-top: 1%">
+            <mat-label class="green">Current time: {{ timer }}</mat-label><br>
+        </div>
+        <div class="previous" style="margin-top: 0.5%">
+            <mat-label class="green">Last time: {{ previous }}</mat-label>           
+        </div>
+        <div class="mistakes" style="margin-top: 1%">
+            <mat-label class="green">Mistakes: {{ mistakes }}</mat-label>
+        </div>
+    </mat-card-content>
     <mat-accordion>
         <mat-expansion-panel (opened)="calculateNextNumbers()" #nextNumbersPanel class="transparent green">
             <mat-expansion-panel-header>
